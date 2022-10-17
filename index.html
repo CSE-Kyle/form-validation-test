@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <title>Form Validator</title>
+    </head>
+
+    <body>
+        <main>
+            <div class="form-wrapper">
+                <form action="" class="form">
+                    <h1>Enter your information</h1>
+                    <div class="form-wrap">
+                        <label for="name" class="form-label">Name:</label>
+                        <input type="text" class="name-input" placeholder="first and last...">
+                    </div>
+                    <div class="form-wrap">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="text" class="email-input">
+                    </div>
+                    <div class="form-wrap radio-btns">
+                        <label for="gender" class="form-label">Gender:</label>
+                        <input type="radio" name="radio">Male</input><br>
+                        <input type="radio" name="radio">Female</input><br>
+                        <input type="radio" name="radio">Prefer not to answer</input>
+                    </div>
+                    <div class="form-wrap">
+                        <textarea name="text" id="text-area" cols="30" rows="10"></textarea>
+                    </div>
+                    <button type="submit" id="submit" onclick="clickSubmit()">Submit</button>
+                </form>
+            </div>
+        </main>
+        <script src="app.js"></script>
+    </body>
+</html>
